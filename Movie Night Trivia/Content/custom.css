@@ -1,0 +1,58 @@
+﻿input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+.borderWrapper {
+    /*border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    -webkit-border-radius: 20px 20px 20px 20px;*/
+    border: 1px solid #808080;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    background-color:#222;
+    min-height:600px;
+}
+
+html { 
+  background: url(images/background_alt.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.glyphiconBlack {
+    color:black;
+}
+
+.glyphiconWhite {
+    color:white;
+}
+
+.inputCustom{
+    font-weight:bold;
+    font-size:large;
+}
+
+.customHR {
+    display:block;
+    border:none;
+    color:white;
+    height:1px;
+    background:black;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#fff), to(#222));
+}
+.scoreTable tr {
+    height:40px;
+    text-align:left;
+    background-color:#77b300;
+    border-bottom:1px solid #222;
+}
+
+.scoreTable tr td {
+    padding-left:10px;
+}

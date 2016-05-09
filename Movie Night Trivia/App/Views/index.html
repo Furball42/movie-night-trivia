@@ -1,0 +1,206 @@
+﻿<div ng-controller="QuizController" class="borderWrapper col-md-12">
+    <div id="reg" ng-show="showReg">                        
+        <form name="regForm" class="form-inline" role="form">
+            <div class="col-md-12">
+                <img class="img-responsive center-block" style="max-width:100%;" src="../../Content/images/logo_new.png" width="512" height="512"/>
+            </div>
+            <div class="col-md-6 col-md-offset-3">
+                <p class="text-center"><h2>Welcome to Movie Night Trivia.</h2></p>
+                <p class="text-center">To get started either create a game or join a friend's.</p>
+            </div>
+            <div class="col-md-6 col-md-offset-3 text-center">
+                <br />
+                <div class="form-group has-feedback">
+                    <input style="max-width:100%; width:400px" type="text" class="form-control" name="username" placeholder="Enter User Name" ng-model="username" required>
+                    <i class="glyphicon glyphicon-user form-control-feedback glyphiconBlack"></i>
+                </div>                
+            </div>
+            <div class="col-md-6 col-md-offset-3 text-center">   
+                <br />
+                <div class="form-group">                    
+                    <button type="submit" class="btn btn-info" ng-click="regForm.$valid && createSession(username)" ng-disabled="isDisabled">Create</button>
+                    <button type="submit" class="btn btn-warning" ng-click="regForm.$valid && showConnectionView()" ng-disabled="isDisabled">Join</button>
+                </div>                  
+            </div>
+            <div class="col-md-6 col-md-offset-3 text-center">
+                &nbsp;
+            </div>
+        </form>
+    </div>
+    
+    <div id="conn" ng-show="showConn">
+        <form name="connForm" class="form-inline" role="form">
+            <div class="col-md-12">
+                <img class="img-responsive center-block" style="max-width:100%;" src="../../Content/images/logo_new.png" width="512" height="512" />
+            </div>
+            <div class="col-md-6 col-md-offset-3 text-center">
+                <br />
+                <p class="text-center">Enter your game ID</p>
+            </div>
+            <div class="col-md-6 col-md-offset-3 text-center">
+                <br />
+                <div class="form-group has-feedback">
+                    <input style="max-width:100%; width:400px;" type="text" class="form-control" name="gameSession" placeholder="Enter game session id" ng-model="sessionID" required>
+                    <i class="glyphicon glyphicon-link form-control-feedback glyphiconBlack"></i>
+                </div>                
+            </div>
+            <div class="col-md-6 col-md-offset-3 text-center">
+                <br />
+                <button type="submit" class="btn btn-info" ng-click="connForm.$valid && joinSession()">Join</button>                
+            </div>
+            <div class="col-md-6 col-md-offset-3 text-center">
+                &nbsp;
+            </div>            
+        </form>
+            
+    </div>
+
+    <div id="limbo" ng-show="inLimbo && !isConnected && !p2IsConnected">
+        <form name="limboForm" class="form-inline" role="form">
+            <div class="col-md-12">
+                <img class="img-responsive center-block" style="max-width:100%;" src="../../Content/images/logo_new.png" width="512" height="512" />
+            </div>
+            <div class="col-md-6 col-md-offset-3 text-center">
+                <br />
+                <p class="text-center">Share your game ID with your friend</p>
+            </div>
+            <div class="col-md-6 col-md-offset-3 text-center">
+                <br />
+                <div class="form-group has-feedback">
+                    <input style="max-width:100%; width:400px;" type="text" class="form-control text-center inputCustom" ng-model="sessionID">
+                    <i class="glyphicon glyphicon-link form-control-feedback glyphiconBlack"></i>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <img class="img-responsive center-block" src="../../Content/images/ripple_alt.gif" />
+            </div>
+            <div class="col-md-6 col-md-offset-3">
+                <p class="text-center">Waiting for other player to connect...</p>
+            </div>
+            <div class="col-md-6 col-md-offset-3 text-center">
+                &nbsp;
+            </div>
+        </form>        
+    </div>       
+            
+    <div id="loading" ng-show="showLoading">
+        <div>
+            <div class="col-md-12">
+                <img class="img-responsive center-block" style="max-width:100%;" src="../../Content/images/logo_new.png" width="512" height="512" />
+            </div>
+            <div class="col-md-12">
+                <img class="img-responsive center-block" src="../../Content/images/ripple_alt.gif" />
+            </div>
+            <div class="col-md-6 col-md-offset-3">
+                <p class="text-center">Loading quiz...</p>
+            </div>
+        </div>        
+    </div>   
+    
+    <div id="quiz" ng-show="showQuiz && !isCompleted">       
+        
+        <form name="quizForm" class="form-inline" role="form">                     
+            <div>
+                <br/>
+                <table class="scoreTable" width="100%">
+                    <tr>
+                        <td style="width:80%">{{username}}</td>
+                        <td style="width:10%; text-align:center"><span class="badge">{{score}}</span></td>
+                        <td style="width:10%; text-align:center"><i ng-show="isReady && !p2Ready" class="glyphicon glyphicon-check glyphiconWhite"></i></td>
+                    </tr>
+                    <tr>
+                        <td style="width:80%">{{p2Name}}</td>
+                        <td style="width:10%; text-align:center"><span class="badge">{{p2Score}}</span></td>
+                        <td style="width:10%; text-align:center"><i ng-show="p2Ready" class="glyphicon glyphicon-check glyphiconWhite"></i></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div><span class="customHR"></span></div>
+
+            <div ng-repeat="movie in filteredMovies">
+                <div><h2>Round {{currentQuestion}}</h2></div>
+
+                <div><span class="customHR"></span></div>
+                <br/>
+
+                <div class="question">
+                    <div class="col-md-6 col-md-offset-3">
+                        <table class="" width="100%">
+                            <tr>
+                                <td style="width:25%"><img src={{movie.ImageURL}} alt={{movie.Title}}</td>
+                                <td style="width:75%; text-align:left"><h3>{{movie.Title}}</h3></td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+
+                    <!--<div class="col-md-6 col-md-offset-3 text-center">
+                        <img src={{movie.ImageURL}} alt={{movie.Title}} />&nbsp;{{movie.Title}}                        
+                    </div>-->     
+                    <br/>             
+                    <div class="col-md-6 col-md-offset-3">
+                        <br />
+                        <div class="form-group has-feedback">                            
+                            <input style="max-width:100%; width:400px;" name="answer" type="number" class="form-control" ng-model="movie.Answer" ng-minlength="4" ng-maxlength="4" required placeholder="Enter Date" ng-disabled="disableNext" ng-keypress="limitKeypress($event,movie.Answer,4)">
+                            <i class="glyphicon glyphicon-calendar form-control-feedback glyphiconBlack"></i>
+                        </div>                        
+                    </div>   
+
+                    <div class="col-md-6 col-md-offset-3 text-center">
+                        <br />
+                        <button class="btn btn-success" ng-click="quizForm.$valid && onSelect(movie)" ng-disabled="disableNext">Submit</button>
+                    </div>
+
+                    <div class="col-md-6 col-md-offset-3 text-center">
+                        <p ng-show="quizForm.answer.$error.minlength">Date is too short.</p>
+                        <p ng-show="quizForm.answer.$error.maxlength">Date is too long.</p>
+                        <!--{{movie.Year}}-->
+                    </div>
+                </div>
+            </div>               
+        </form>     
+    </div>   
+
+    <div id="result" ng-show="isCompleted">
+        <div class="col-md-12">
+            <img class="img-responsive center-block" style="max-width:100%;" src="../../Content/images/logo_new.png" width="512" height="512" />
+        </div>
+
+        <div ng-show="hasWon && !tied">
+            <div class="col-md-6 col-md-offset-3 text-center">
+                <p class="text-center"><h2>Congratulations! You have won!</h2></p>
+            </div>
+            <div class="col-md-12">
+                <img class="img-responsive center-block" style="max-width:100%;" src="../../Content/images/win.png" width="256" height="256" />
+            </div>
+        </div>
+
+        <div ng-show="!hasWon && !tied">
+            <div class="col-md-6 col-md-offset-3 text-center">
+                <p class="text-center"><h2>Too bad! Better luck next time..</h2></p>
+            </div>
+            <div class="col-md-12">
+                <img class="img-responsive center-block" style="max-width:100%;" src="../../Content/images/lost.png" width="256" height="256" />
+            </div>
+        </div>
+
+        <div ng-show="tied">
+            <div class="col-md-12">
+                <p class="text-center"><h2>You are tied!</h2></p>
+            </div>
+            <div class="">
+                <img class="img-responsive center-block" style="max-width:100%;" src="../../Content/images/tied.png" width="256" height="256" />
+            </div>
+        </div>
+
+        <div class="col-md-6 col-md-offset-3 text-center">
+            <br />
+            <button class="btn btn-success" ng-click="reset()">Back to Start</button>
+        </div>
+
+        <div class="col-md-6 col-md-offset-3 text-center">
+            &nbsp;
+        </div>
+    </div>
+</div>

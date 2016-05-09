@@ -1,0 +1,77 @@
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\ApplicationInsights.config
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\roslyn\csc.exe
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\roslyn\Microsoft.CodeAnalysis.dll
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\roslyn\Microsoft.CSharp.Core.targets
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\roslyn\Microsoft.VisualBasic.Core.targets
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\roslyn\System.Collections.Immutable.dll
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\roslyn\System.Reflection.Metadata.dll
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\roslyn\vbc.exe
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\roslyn\VBCSCompiler.exe
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\roslyn\VBCSCompiler.exe.config
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\Movie Night Trivia.dll.config
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\Movie Night Trivia.dll
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\Movie Night Trivia.pdb
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\Antlr3.Runtime.dll
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\EntityFramework.dll
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\EntityFramework.SqlServer.dll
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\Microsoft.AI.Agent.Intercept.dll
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\Microsoft.AI.DependencyCollector.dll
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\Microsoft.AI.PerfCounterCollector.dll
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\Microsoft.AI.ServerTelemetryChannel.dll
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\Microsoft.AI.Web.dll
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\Microsoft.AI.WindowsServer.dll
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\Microsoft.ApplicationInsights.dll
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\Microsoft.Web.Infrastructure.dll
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\Newtonsoft.Json.dll
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\System.Net.Http.Formatting.dll
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\System.Web.Helpers.dll
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\System.Web.Http.dll
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\System.Web.Http.WebHost.dll
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\System.Web.Mvc.dll
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\System.Web.Optimization.dll
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\System.Web.Razor.dll
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\System.Web.WebPages.Deployment.dll
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\System.Web.WebPages.dll
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\System.Web.WebPages.Razor.dll
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\WebGrease.dll
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\EntityFramework.xml
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\EntityFramework.SqlServer.xml
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\Microsoft.AI.DependencyCollector.xml
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\Microsoft.AI.ServerTelemetryChannel.xml
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\Microsoft.AI.Web.xml
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\Microsoft.AI.WindowsServer.xml
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\Microsoft.ApplicationInsights.xml
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\Newtonsoft.Json.xml
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\System.Net.Http.Formatting.xml
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\System.Web.Helpers.xml
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\System.Web.Http.xml
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\System.Web.Http.WebHost.xml
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\System.Web.Mvc.xml
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\System.Web.Optimization.xml
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\System.Web.Razor.xml
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\System.Web.WebPages.xml
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\System.Web.WebPages.Deployment.xml
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\System.Web.WebPages.Razor.xml
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\Antlr3.Runtime.pdb
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\obj\Debug\Movie Night Trivia.csprojResolveAssemblyReference.cache
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\obj\Debug\Movie Night Trivia.dll
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\obj\Debug\Movie Night Trivia.pdb
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\HtmlAgilityPack.dll
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\HtmlAgilityPack.pdb
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\HtmlAgilityPack.xml
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\Microsoft.AspNet.SignalR.Core.dll
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\Microsoft.Owin.dll
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\Microsoft.Owin.Host.SystemWeb.dll
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\Microsoft.Owin.Security.dll
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\Owin.dll
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\Microsoft.AspNet.SignalR.Core.xml
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\Microsoft.Owin.xml
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\Microsoft.Owin.Host.SystemWeb.xml
+I:\Hadron Dev\Movie Night Trivia\Movie Night Trivia\bin\Microsoft.Owin.Security.xml
