@@ -246,6 +246,8 @@ var QuizController = function ($scope, $http, $location, QuizService) {
     $scope.calculatePoints = function () {
 
         $scope.score = ($scope.totalCorrect * 5) - ($scope.totalIncorrect * 3);
+        if ($scope.score < 0)
+            $scope.score = 0;
     }
 
     //return to start
