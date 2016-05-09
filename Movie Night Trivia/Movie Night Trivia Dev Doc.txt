@@ -20,6 +20,11 @@ Game Logic
 - Scoring is applied after answer is submitted
 - After 8 rounds, the players get a results screen detailing if they won or lost
 
+Notes
+-----
+
+- I tried hosting the app on our host here, but the host doesn't allow full trust mode which is a requirement for SignalR to function properly.
+
 Missing Features
 ----------------
 

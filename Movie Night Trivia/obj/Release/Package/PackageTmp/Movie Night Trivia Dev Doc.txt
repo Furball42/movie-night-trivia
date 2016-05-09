@@ -1,0 +1,52 @@
+﻿Libraries and Mods Used
+-----------------------
+
+[javascript]
+Angular Core
+Angular Route
+
+[.NET]
+HTML Agility Pack
+SignalR
+
+Game Logic
+----------
+- Player 1 (P1) hosts game and generates a unique sessionID
+- P1 shares this ID with Player 2 (P2) which P2 enters to join the session
+- Each player generates his own set of questions (scraping)
+- Player compete head-to-head on a round basis
+- Next round triggers when both players have entered an answer
+- Each player can see the other player's score and ready state
+- Scoring is applied after answer is submitted
+- After 8 rounds, the players get a results screen detailing if they won or lost
+
+Missing Features
+----------------
+
+- Lobby (see assumptions)
+- Saving to database
+- Results Tracking for stats
+- Player 2 should check for Player 1 to be ready before showing first question
+
+Improvements
+------------
+
+- Using States (angular) to implement proper routing/states
+- Using server for actual answer checking to avoid client-side hacking/manipulation
+- Using server to keep track of all the game sessions and organize accordingly (this would go hand-in-hand with lobby)
+- Allowing more than two players. Current code restricts it to two players, but with a server handling lobby etc, more players could be added to the game.
+- Scrape the URL once and store the data in the database
+- Bigger sesssionID to reduce the chance of duplicates -> 4 is used for ease of copy/paste and testing. Obsolete when lobby is implemented
+- Better quality poster images. The scraped URL provides a small thumbnail only. 
+
+
+Assumptions
+-----------
+
+- No database is used. Specifications doesn't mention any usage of databse.
+- Each player gets a unique set of questions and not the same ones -> to change the host will pass the movie list object to the connecting player
+- The URL is scraped at 'runtime' and not stored in database -> since no database is used, the 'runtime' scraping option was used. 
+- Player scores can't dip below zero. This can be easily changed by just removing the check.
+- Poster image thumbnail included as an excerise. 
+- Used websocket technology (SignalR) for the 'real time' aspect of the game.
+- Opted for .NET to try my hand at SignalR (which is awesome)

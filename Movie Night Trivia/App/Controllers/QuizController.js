@@ -42,6 +42,7 @@ var QuizController = function ($scope, $http, $location, QuizService) {
     $scope.gameHub = null; // holds the reference to hub
     $scope.gameHub = $.connection.gameHub; // initializes hub
     
+    $.connection.hub.logging = true;
     //start hub connection and save uid
     $.connection.hub.start().done(function () {
         $scope.connID = $.connection.hub.id;

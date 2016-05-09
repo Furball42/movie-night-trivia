@@ -240,8 +240,15 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\custom.css" />
+    <Content Include="Content\images\background.jpg" />
+    <Content Include="Content\images\background_alt.jpg" />
+    <Content Include="Content\images\logo_new.png" />
+    <Content Include="Content\images\lost.png" />
     <Content Include="Content\images\ripple.gif" />
+    <Content Include="Content\images\ripple_alt.gif" />
     <Content Include="Content\images\temp_reel.png" />
+    <Content Include="Content\images\tied.png" />
+    <Content Include="Content\images\win.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -278,6 +285,8 @@
     </Content>
     <Content Include="Scripts\angular.min.js.map" />
     <Content Include="Scripts\angular-route.min.js.map" />
+    <None Include="Properties\PublishProfiles\Hadron.pubxml" />
+    <None Include="Properties\PublishProfiles\mm.co.za.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -286,7 +295,7 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
-    <Content Include="Libraries and Mods.txt" />
+    <Content Include="Movie Night Trivia Dev Doc.txt" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -302,6 +311,9 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <None Include="Web.mm.co.za.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
