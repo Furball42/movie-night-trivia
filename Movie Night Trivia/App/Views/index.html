@@ -11,7 +11,7 @@
             <div class="col-md-6 col-md-offset-3 text-center">
                 <br />
                 <div class="form-group has-feedback">
-                    <input style="max-width:100%; width:400px" type="text" class="form-control" name="username" placeholder="Enter User Name" ng-model="username" required>
+                    <input style="max-width:100%; width:400px" type="text" class="form-control" name="username" placeholder="Enter User Name" ng-model="username" value="{{username}}" required>
                     <i class="glyphicon glyphicon-user form-control-feedback glyphiconBlack"></i>
                 </div>                
             </div>
@@ -104,12 +104,14 @@
                 <br/>
                 <table class="scoreTable" width="100%">
                     <tr>
-                        <td style="width:80%">{{username}}</td>
+                        <td style="width:5%"><i class="glyphicon glyphicon-user glyphiconWhite"></i></td>
+                        <td style="width:75%">{{username}}</td>
                         <td style="width:10%; text-align:center"><span class="badge">{{score}}</span></td>
                         <td style="width:10%; text-align:center"><i ng-show="isReady && !p2Ready" class="glyphicon glyphicon-check glyphiconWhite"></i></td>
                     </tr>
                     <tr>
-                        <td style="width:80%">{{p2Name}}</td>
+                        <td style="width:5%"><i class="glyphicon glyphicon-user glyphiconWhite"></i></td>
+                        <td style="width:75%">{{p2Name}}</td>
                         <td style="width:10%; text-align:center"><span class="badge">{{p2Score}}</span></td>
                         <td style="width:10%; text-align:center"><i ng-show="p2Ready" class="glyphicon glyphicon-check glyphiconWhite"></i></td>
                     </tr>
@@ -172,7 +174,7 @@
                 <p class="text-center"><h2>Congratulations! You have won!</h2></p>
             </div>
             <div class="col-md-12">
-                <img class="img-responsive center-block" style="max-width:100%;" src="../../Content/images/win.png" width="256" height="256" />
+                <img class="img-responsive center-block" style="max-width:100%;" src="../../Content/images/win.png" width="128" height="128" />
             </div>
         </div>
 
@@ -181,7 +183,7 @@
                 <p class="text-center"><h2>Too bad! Better luck next time..</h2></p>
             </div>
             <div class="col-md-12">
-                <img class="img-responsive center-block" style="max-width:100%;" src="../../Content/images/lost.png" width="256" height="256" />
+                <img class="img-responsive center-block" style="max-width:100%;" src="../../Content/images/lost.png" width="128" height="128" />
             </div>
         </div>
 
@@ -190,7 +192,7 @@
                 <p class="text-center"><h2>You are tied!</h2></p>
             </div>
             <div class="">
-                <img class="img-responsive center-block" style="max-width:100%;" src="../../Content/images/tied.png" width="256" height="256" />
+                <img class="img-responsive center-block" style="max-width:100%;" src="../../Content/images/tied.png" width="128" height="128" />
             </div>
         </div>
 

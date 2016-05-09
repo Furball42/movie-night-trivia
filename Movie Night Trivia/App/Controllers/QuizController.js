@@ -250,36 +250,7 @@ var QuizController = function ($scope, $http, $location, QuizService) {
 
     //return to start
     $scope.reset = function () {
-        //p1 vars
-        $scope.username = "";
-        $scope.sessionID = "";
-        $scope.isConnected = false;
-        $scope.totalCorrect = 0;
-        $scope.totalIncorrect = 0;
-        $scope.score = 0;
-        $scope.isCompleted = false;
-        $scope.connID = "";
-
-        //p2 vars
-        $scope.p2IsConnected = false;
-        $scope.p2Score = 0;
-        $scope.p2ConnID = "";
-        $scope.p2Name = "";
-
-        //ui 
-        $scope.showQuiz = false;
-        $scope.showConn = false;
-        $scope.showReg = true;
-        $scope.inLimbo = false;
-        $scope.isDisabled = false;
-        $scope.disableNext = false;
-        $scope.isReady = false;
-        $scope.p2Ready = false;
-        $scope.hasWon = false;
-        $scope.tied = false;
-        $scope.showLoading = false;
-
-        //note this could be done better when using states or proper routing
+        location.reload();
     }
 
 }
